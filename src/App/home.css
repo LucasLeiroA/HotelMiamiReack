@@ -1,0 +1,7 @@
+.app-container{
+    width: 100vw;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
