@@ -1,10 +1,11 @@
-#home{
-    height: 100vh;
-    width: 100%;
-}
-.container-sectioin .sectionInfo{
-    padding-top: 15vh;
-    height: 100vh;
-    
-}
 
+.container-section .sectionInfo{
+   
+    min-height: 86vh;
+    width: 70%;
+    border: red 2px solid;
+    margin: auto;
+}
+section[id]{
+    scroll-margin-top: 14vh;
+}

@@ -1,0 +1,44 @@
+.big-titulo{
+    margin-top: 20vh;
+ 
+}
+.big-titulo h1{
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 70px;
+    color: #008168;
+    font-weight: bold;
+}
+
+
+.img-carouseles{
+    width: 460px;
+    height: 530px;
+    display: block;
+    filter: brightness(100%);
+}
+.conteiner-carouseles{
+    width: 50%;
+    height: auto;
+
+}
+.carusel{
+    border: 2px solid green;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.habInfo{
+    width: 50%;
+
+    border: blue 2px solid;
+}
+.container-Hab{
+    margin-top: 2%;
+}
+.loader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}

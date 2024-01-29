@@ -1,20 +1,22 @@
 html{
     scroll-behavior: smooth;
-
+    
 }
 nav{
     position: absolute;
     top: 100;
-    padding-top: 5px;
     z-index: 2;
+    
 }
 
 .stiky{
     position: fixed;
 	top: 0;
-	background: #fff;
+	background: #375d81;
 	box-shadow: 1px 1px 20px #bbb5b5;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
+    height: 14vh;
+    z-index: 150;
 }
 .stiky .contact-phone { 
     color: black;
@@ -22,79 +24,83 @@ nav{
 .stiky .phone-icon{
     color: black ;
 }
+
 .nav-tar-container{
     display: flex;
     flex-direction: row;
     width: 100vw;
     list-style: none;
-    
+    height: 10vh;
 }
 .phone-icon{
-    color: #fff;
+    color: #EDEDE5;
     font-size: 20px;
     margin-right: 3px;
 }
-.logo-container {
-    width: 10vw;
-    padding-top: 20px;
-    padding-left: 20px;
+.stiky .logo-container{
+    height: 14vh;
 }
+.logo-container {
+    width: 30%;
+
+}
+.logo-div{
+    background-image: url(/image/logoHotelBlanco2024.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 100%;
+ 
+}
+
 .logo-container img{
     display: block;
-    width: 100%
-}
-.separator-container{
-    width:90vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.separator-container div{
     width: auto;
-    margin-right: 2%;
+    height:100% ;
+    
 }
+
 .contact-phone{
     display: flex;
     flex-direction: row;
     color: #ffffff;
 	font-size: 25px;
-	height: 4vh;
 	font-family:'Fjalla One', sans-serif;
 }
+
 
 .toogle-button{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: none;
-    background-color: #1c1b21;
-    color: #fff;
+    background-color: #EDEDE5;
+    color: #0B0D10;
     font-family: 'Fjalla One', sans-serif;
     font-size: 20px;
     cursor: pointer;
-    padding: 9px 20px 3px;
+    padding: 10% 20%;
     letter-spacing: 0.5px;
-    min-width: 6vw;
-    height: 4vh;
+    
+    border-radius: 20%;
+    
 }
 
 .reserv-boton{
     border:none;
-	line-height: 35px;
 	background: #008168;
-	padding: 0 20px;
-	color: #fff;
+	padding: 10% 20%;
+	color: #EDEDE5;
 	font-size: 20px;
 	font-family: 'Fjalla One', sans-serif;
-    margin-right: 10px;
     letter-spacing: 0.5px;
-    height: 4vh;
-    
+    border-radius: 20%;
+   
 }
 .reserv-boton a{
 
     text-decoration: none;
-    color: #fff;
+    color: #EDEDE5;
 }
 
 
@@ -128,7 +134,7 @@ nav{
 
 
 .listMenu-container{
-    background-color: white;
+    
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -136,7 +142,7 @@ nav{
     top: 0;
     height: 100vh;
     width: 20vw !important; 
-    background-color:#1C1B21;
+    background-color:#375d81;
     
     left:-100%;
     transition: left 0.9s;
@@ -177,7 +183,7 @@ nav{
 .menu-container a{
     position: absolute;
     z-index: 30;
-    color: #fff;
+    color: #EDEDE5;
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
@@ -196,8 +202,8 @@ nav{
 	height: 3px;
 	position: absolute;
 	left: -60px;
-	top: 25px;
-	background: #008168;
+	top: 50%;
+	background: #000029;
 	transition-duration: 500ms;
 	-webkit-transition-duration: 500ms;
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
@@ -209,8 +215,8 @@ nav{
 	height: 3px;
 	position: absolute;
 	right: -60px;
-	top: 25px;
-	background: #008168;
+	top: 50%;
+	background: #000029;
 	transition-duration: 500ms;
 	-webkit-transition-duration: 500ms;
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
@@ -219,7 +225,7 @@ nav{
 
 .menu-container a:hover, nav ul li.active a {
 	text-decoration: none;
-	color: #008168;
+	color: #000029;
 }
 .menu-container a:hover:before, nav ul li.active a:before {
 	width: 30px;
@@ -227,8 +233,14 @@ nav{
 .menu-container a:hover:after, nav ul li.active a:after {
 	width: 30px;
 }
+.menu-container a.selected {
+    color: #000029;
+  }
 
 
+.selected{
+    color: #000029;
+ }
 
 
 .tittle-menu{
@@ -236,13 +248,44 @@ nav{
     width: 100%;
 	height: 70px;
 	line-height: 70px;
-	color: #fff;
+	color: #EDEDE5;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 1.5rem;
     margin-top: 10px;
 }
 .paraf-text{
     text-align: center;
-    color:#fff;
+    color:#EDEDE5;
     font-family: 'Titillium Web', sans-serif;
 }
+.list-container{
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    
+}
+.butom-container{
+    
+    height: 14vh;
+    width: 70%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   padding-right: 5%;
+
+}
+.butom-container div{
+    padding: 0px 0px 0px 5%;
+}
+
+/* .separator-container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+.separator-container div{
+    width: auto;
+    margin-right: 2%;
+} */
